@@ -60,7 +60,7 @@ chosen_rating = []
 
 def read_price(filename):
     array = []
-    my_file = open(filename, 'r')
+    my_file = open(filename, 'r', encoding="windows-1252")
     for line in my_file:
         words = line.split(",")
         array.append((words[-2]))
@@ -71,7 +71,7 @@ def read_price(filename):
 
 def read_rating(filename):
     array = []
-    my_file = open(filename, 'r')
+    my_file = open(filename, 'r', encoding="windows-1252")
     for line in my_file:
         words = line.split(",")
         array.append((words[-1]))
@@ -82,7 +82,7 @@ def read_rating(filename):
 
 def read_district(filename):
     array = []
-    my_file = open(filename, 'r')
+    my_file = open(filename, 'r', encoding="windows-1252")
     for line in my_file:
         words = line.split(",")
         array.append((words[5]))
@@ -93,7 +93,7 @@ def read_district(filename):
 
 def read_name(filename):
     name = []
-    my_file = open(filename, 'r')
+    my_file = open(filename, 'r', encoding="windows-1252")
     for line in my_file:
         words = line.split(",")
         name.append((words[1]))
@@ -104,7 +104,7 @@ def read_name(filename):
 
 def read_address(filename):
     address = []
-    my_file = open(filename, 'r')
+    my_file = open(filename, 'r', encoding="windows-1252")
     for line in my_file:
         words = line.split(",")
         address.append((words[4]))
@@ -115,7 +115,7 @@ def read_address(filename):
 
 def read_type(filename):
     array = []
-    my_file = open(filename, 'r')
+    my_file = open(filename, 'r', encoding="windows-1252")
     for line in my_file:
         words = line.split(",")
         array.append((words[2]))
@@ -126,7 +126,7 @@ def read_type(filename):
 
 def read_cuisine(filename):
     array = []
-    my_file = open(filename, 'r')
+    my_file = open(filename, 'r', encoding="windows-1252")
     for line in my_file:
         words = line.split(",")
         array.append((words[3]))
