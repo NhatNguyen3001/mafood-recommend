@@ -186,13 +186,13 @@ def getGeoCoord(geo_address, API_KEY):
 
 
 # Read file
-my_price = read_price("https://raw.githubusercontent.com/Surllian/SEPM/Nhat/All_dis_workbook.csv")
-my_name = read_name("https://raw.githubusercontent.com/Surllian/SEPM/Nhat/All_dis_workbook.csv")
-my_address = read_address("https://raw.githubusercontent.com/Surllian/SEPM/Nhat/All_dis_workbook.csv")
-my_type = read_type("https://raw.githubusercontent.com/Surllian/SEPM/Nhat/All_dis_workbook.csv")
-my_cuisine = read_cuisine("https://raw.githubusercontent.com/Surllian/SEPM/Nhat/All_dis_workbook.csv")
-my_district = read_district("https://raw.githubusercontent.com/Surllian/SEPM/Nhat/All_dis_workbook.csv")
-my_rating = read_rating("https://raw.githubusercontent.com/Surllian/SEPM/Nhat/All_dis_workbook.csv")
+my_price = read_price("All_dis_workbook.csv")
+my_name = read_name("All_dis_workbook.csv")
+my_address = read_address("All_dis_workbook.csv")
+my_type = read_type("All_dis_workbook.csv")
+my_cuisine = read_cuisine("All_dis_workbook.csv")
+my_district = read_district("All_dis_workbook.csv")
+my_rating = read_rating("All_dis_workbook.csv")
 
 district = st.selectbox("Choose your district", ("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12",
                                                  "Binh_Chanh", "Binh_Tan", "Binh_Thanh", "Go_Vap", "Hoc_Mon",
